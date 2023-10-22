@@ -8,7 +8,11 @@ Extensive ReVanced builder
 
 Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/releases).
 
-Use [**zygisk-detach**](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music from Play Store if you are using magisk modules. 
+Use [**zygisk-detach**](https://github.com/j-hc/zygisk-detach) (Magisk v24.0+ required) to detach YouTube and YT Music from Play Store if you are using magisk modules. 
+
+or
+
+Use [**Detach**](https://xdaforums.com/t/module-detach3-detach-market-links.3447494) (Magisk v20.4+ required) to detach YouTube and YT Music from Play Store if you are using magisk modules. (if using YT Music, it has to be added to the "Detach" module config file)
 
 <details><summary><big>Features</big></summary>
 <ul>
@@ -42,12 +46,12 @@ also see here [`CONFIG.md`](./CONFIG.md)
 ## Building Locally
 ### On Termux
 ```console
-bash <(curl -sSf https://raw.githubusercontent.com/j-hc/revanced-magisk-module/main/build-termux.sh)
+bash <(curl -sSf https://raw.githubusercontent.com/XxFrAnCoGoLxX/revanced-magisk-module/main/build-termux.sh)
 ```
 
 ### On Desktop
 ```console
-$ git clone https://github.com/j-hc/revanced-magisk-module
+$ git clone https://github.com/XxFrAnCoGoLxX/revanced-magisk-module
 $ cd revanced-magisk-module
 $ ./build.sh
 ```
