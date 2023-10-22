@@ -8,7 +8,7 @@ parallel-jobs = 4 # amount of cores to use for parallel patching, if not set npr
 # you can use rvmm-config-gen to generate a config
 
 [YouTube]
-enabled = true # whether to build the app. default: true
+enabled = false # whether to build the app. default: true
 version = "auto" # 'auto', 'latest', 'beta' or a custom one e.g. '17.40.41'. default: auto
 # 'auto' option gets the latest possible version supported by all the included patches
 # 'latest' gets the latest stable without checking patches support. 'beta' gets the latest beta/alpha
@@ -22,7 +22,7 @@ apkmirror-arch = "arm64-v8a" # 'arm64-v8a', 'arm-v7a', 'all', 'both'. 'both' dow
 
 
 [Music]
-enabled = true # whether to build the app. default: true
+enabled = false # whether to build the app. default: true
 version = "auto" # 'auto', 'latest', 'beta' or a custom one e.g. '17.40.41'. default: auto
 # 'auto' option gets the latest possible version supported by all the included patches
 # 'latest' gets the latest stable without checking patches support. 'beta' gets the latest beta/alpha
@@ -36,7 +36,7 @@ apkmirror-arch = "arm64-v8a" # 'arm64-v8a', 'arm-v7a', 'all', 'both'. 'both' dow
 
 [Music-Extended]
 app-name = "Music" # if set, release name becomes SomeApp instead of Some-App. default is same as table name, which is 'Some-App' here.
-enabled = true # whether to build the app. default: true
+enabled = false # whether to build the app. default: true
 version = "auto" # 'auto', 'latest', 'beta' or a custom one e.g. '17.40.41'. default: auto
 # 'auto' option gets the latest possible version supported by all the included patches
 # 'latest' gets the latest stable without checking patches support. 'beta' gets the latest beta/alpha
@@ -57,12 +57,11 @@ enabled = true # whether to build the app. default: true
 version = "auto" # 'auto', 'latest', 'beta' or a custom one e.g. '17.40.41'. default: auto
 # 'auto' option gets the latest possible version supported by all the included patches
 # 'latest' gets the latest stable without checking patches support. 'beta' gets the latest beta/alpha
-build-mode = "both" # 'both', 'apk' or 'module'. default: apk
-included-patches = "'Vanced MicroG support' 'MicroG support' 'Add splash animation' 'Custom playback speed' 'Default video quality' 'Disable pip notification' 'Disable shorts on startup' 'Enable gradient loading screen' 'Enable language switch' 'Enable minimized playback' 'Enable new splash animation' 'Enable new thumbnail preview' 'Enable tablet mini player' 'Force premium heading' 'Hide auto player popup panels' 'Hide category bar' 'Hide channel watermark' 'Hide crowdfunding box' 'Hide double tap overlay filter' 'Hide general ads' 'Hide mix playlists' 'Hide shorts components' 'Hide video ads' 'Return YouTube Dislike' 'Settings' 'SponsorBlock' 'Spoof device dimensions' 'Swipe controls' 'Theme'" # whitespace seperated list of patches to include, all default patches are included by default. default: "" (empty)
-excluded-patches = "'Custom branding YouTube name' 'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red' 'Custom package name'" # whitespace seperated list of patches to exclude. default: "" (empty)
+build-mode = "module" # 'both', 'apk' or 'module'. default: apk
+included-patches = "'Add splash animation' 'Custom playback speed' 'Default video quality' 'Disable pip notification' 'Disable shorts on startup' 'Enable minimized playback' 'Enable new splash animation' 'Enable new thumbnail preview' 'Enable tablet mini player' 'Force premium heading' 'Hide auto player popup panels' 'Hide category bar' 'Hide channel watermark' 'Hide crowdfunding box' 'Hide general ads' 'Hide mix playlists' 'Hide shorts components' 'Hide suggested video overlay' 'Hide video ads' 'Overlay buttons' 'Return YouTube Dislike' 'Settings' 'SponsorBlock' 'Spoof player parameters' 'Swipe controls' 'Theme' 'Translations'" # whitespace seperated list of patches to include, all default patches are included by default. default: "" (empty)
+excluded-patches = "''" # whitespace seperated list of patches to exclude. default: "" (empty)
 exclusive-patches = true
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
-apkmirror-dpi = "nodpi" # used to select apk variant from apkmirror. default: nodpi
 apkmirror-arch = "arm64-v8a" # 'arm64-v8a', 'arm-v7a', 'all', 'both'. 'both' downloads both arm64-v8a and arm-v7a. default: all
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
