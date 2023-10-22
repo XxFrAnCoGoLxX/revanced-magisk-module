@@ -32,7 +32,7 @@ if BASEPATH=$(pm path __PKGNAME); then
 		ui_print "* Instalación inválida encontrada. Desinstalando..."
 		pm uninstall -k --user 0 __PKGNAME
 	elif [ ! -f $MODPATH/__PKGNAME.apk ]; then
-		ui_print "* Stock __PKGNAME APK no se encontró"
+		ui_print "* No se encontró __PKGNAME stock APK"
 		VERSION=$(dumpsys package __PKGNAME | grep -m1 versionName)
 		VERSION="${VERSION#*=}"
 		if [ "$VERSION" = __PKGVER ] || [ -z "$VERSION" ]; then
@@ -40,8 +40,8 @@ if BASEPATH=$(pm path __PKGNAME); then
 			INS=false
 		else
 			abort "ERROR: Version mismatch
-			installed: $VERSION
-			module:    __PKGVER
+			instalada: $VERSION
+			modulo:    __PKGVER
 			"
 		fi
 	elif cmpr $BASEPATH/base.apk $MODPATH/__PKGNAME.apk; then
