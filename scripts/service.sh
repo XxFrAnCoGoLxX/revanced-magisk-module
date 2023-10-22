@@ -14,7 +14,7 @@ sleep 5
 
 err() {
 	[ ! -f $MODDIR/err ] && cp $MODDIR/module.prop $MODDIR/err
-	sed -i "s/^des.*/description=⚠️ El modulo está inactivo: '${1}'/g" $MODDIR/module.prop
+	sed -i "s/^des.*/description=⚠️ Module is inactive: '${1}'/g" $MODDIR/module.prop
 }
 
 if [ $svcl = 0 ]; then
@@ -34,14 +34,14 @@ if [ $svcl = 0 ]; then
 				am force-stop __PKGNAME
 				[ -f $MODDIR/err ] && mv -f $MODDIR/err $MODDIR/module.prop
 			else
-				err "fallo al montar"
+				err "mount failed"
 			fi
 		else
-			err "version mismatch (instalada:${VERSION}, modulo:__PKGVER)"
+			err "version mismatch (installed:${VERSION}, module:__PKGVER)"
 		fi
 	else
-		err "instalación inválida"
+		err "invalid installation"
 	fi
 else
-	err "no se instaló la aplicación"
+	err "app not installed"
 fi
