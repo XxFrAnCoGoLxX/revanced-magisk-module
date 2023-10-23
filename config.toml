@@ -8,7 +8,7 @@ parallel-jobs = 4 # amount of cores to use for parallel patching, if not set npr
 # you can use rvmm-config-gen to generate a config
 
 [YouTube]
-enabled = true # whether to build the app. default: true
+enabled = false # whether to build the app. default: true
 version = "auto" # 'auto', 'latest', 'beta' or a custom one e.g. '17.40.41'. default: auto
 # 'auto' option gets the latest possible version supported by all the included patches
 # 'latest' gets the latest stable without checking patches support. 'beta' gets the latest beta/alpha
@@ -22,7 +22,7 @@ apkmirror-arch = "arm64-v8a" # 'arm64-v8a', 'arm-v7a', 'all', 'both'. 'both' dow
 
 
 [Music]
-enabled = true # whether to build the app. default: true
+enabled = false # whether to build the app. default: true
 version = "auto" # 'auto', 'latest', 'beta' or a custom one e.g. '17.40.41'. default: auto
 # 'auto' option gets the latest possible version supported by all the included patches
 # 'latest' gets the latest stable without checking patches support. 'beta' gets the latest beta/alpha
@@ -40,9 +40,9 @@ enabled = true # whether to build the app. default: true
 version = "auto" # 'auto', 'latest', 'beta' or a custom one e.g. '17.40.41'. default: auto
 # 'auto' option gets the latest possible version supported by all the included patches
 # 'latest' gets the latest stable without checking patches support. 'beta' gets the latest beta/alpha
-build-mode = "both" # 'both', 'apk' or 'module'. default: apk
-included-patches = "'Vanced MicroG support' 'MicroG support' 'Amoled' 'Background play' 'Bitrate default value' 'Custom playback speed' 'Enable black navigation bar' 'Enable color match player' 'Enable force minimized player' 'Enable landscape mode' 'Enable minimized playback' 'Enable new player background' 'Enable playback speed' 'Enable sleep timer' 'Exclusive audio playback' 'Hide channel guidelines' 'Hide get premium' 'Hide music ads' 'Hide taste builder' 'Hide terms container' 'Hide tooltip content' 'Hook download button' 'Remember repeat state' 'Remember shuffle state' 'Remember video quality' 'Return YouTube Dislike' 'Settings' 'Translations'" # whitespace seperated list of patches to include, all default patches are included by default. default: "" (empty)
-excluded-patches = "'Bypass certificate checks' 'Custom branding Music name' 'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red' 'Custom package name'" # whitespace seperated list of patches to exclude. default: "" (empty)
+build-mode = "module" # 'both', 'apk' or 'module'. default: apk
+included-patches = "'Amoled' 'Background play' 'Bitrate default value' 'Certificate spoof' 'Custom playback speed' 'Enable black navigation bar' 'Enable color match player' 'Enable custom filter' 'Enable force minimized player' 'Enable landscape mode' 'Enable minimized playback' 'Enable new player background' 'Enable old player layout' 'Enable old style library shelf' 'Enable old style miniplayer' 'Enable opus codec' 'Enable playback speed' 'Enable sleep timer' 'Enable zen mode' 'Exclusive audio playback' 'Hide account menu' 'Hide action bar label' 'Hide button shelf' 'Hide carrousel shelf' 'Hide cast button' 'Hide category bar' 'Hide channel guidelines' 'Hide emoji picker' 'Hide flyout panel' 'Hide get premium' 'Hide handle' 'Hide music ads' 'Hide navigation bar component' 'Hide new playlist button' 'Hide playlist card' 'Hide radio button' 'Hide taste builder' 'Hide terms container' 'Hide tooltip content' 'Hook donwload button' 'Remember playback speed' 'Remember repeat state' 'Remember shuffle state' 'Remember video quality' 'Replace cast button' 'Replace dismiss queue' 'Return YouTube Dislike' 'Settings' 'SponsorBlock' 'Start page' 'Translations' 'Hook download button'" # whitespace seperated list of patches to include, all default patches are included by default. default: "" (empty)
+excluded-patches = "'Custom branding Music name' 'Custom branding icon MMT' 'Custom branding icon  Revancify blue' 'Custom branding Revancify red' 'Custom package name' 'Disable auto captions' 'Enable compact dialog' 'Enable debug logging' 'MicroG support' ' '" # whitespace seperated list of patches to exclude. default: "" (empty)
 exclusive-patches = true
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
 apkmirror-dpi = "nodpi" # used to select apk variant from apkmirror. default: nodpi
@@ -57,9 +57,9 @@ enabled = true # whether to build the app. default: true
 version = "auto" # 'auto', 'latest', 'beta' or a custom one e.g. '17.40.41'. default: auto
 # 'auto' option gets the latest possible version supported by all the included patches
 # 'latest' gets the latest stable without checking patches support. 'beta' gets the latest beta/alpha
-build-mode = "both" # 'both', 'apk' or 'module'. default: apk
-included-patches = "'Vanced MicroG support' 'MicroG support' 'Add splash animation' 'Custom playback speed' 'Default video quality' 'Disable pip notification' 'Disable shorts on startup' 'Enable gradient loading screen' 'Enable language switch' 'Enable minimized playback' 'Enable new splash animation' 'Enable new thumbnail preview' 'Enable tablet mini player' 'Force premium heading' 'Hide auto player popup panels' 'Hide category bar' 'Hide channel watermark' 'Hide crowdfunding box' 'Hide double tap overlay filter' 'Hide general ads' 'Hide mix playlists' 'Hide shorts components' 'Hide video ads' 'Return YouTube Dislike' 'Settings' 'SponsorBlock' 'Spoof device dimensions' 'Swipe controls' 'Theme'" # whitespace seperated list of patches to include, all default patches are included by default. default: "" (empty)
-excluded-patches = "'Custom branding YouTube name' 'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red' 'Custom package name'" # whitespace seperated list of patches to exclude. default: "" (empty)
+build-mode = "module" # 'both', 'apk' or 'module'. default: apk
+included-patches = "'Hide general ads' 'Hide video ads' 'Hide button container' 'Hide comment component' 'Enable old quality layout' 'Hide feed flyout panel' 'Hide player flyout panel' 'Hide autoplay preview' 'Hide fullscreen panels' 'Hide quick actions' 'Disable auto captions' 'Enable gradient loading screen' 'Enable tablet mini player' 'Enable wide search bar' 'Force premium heading' 'Hide auto player popup panels' 'Hide category bar' 'Hide crowdfunding box' 'Hide description components' 'Hide floating microphone' 'Hide handle' 'Hide latest videos button' 'Hide layout components' 'Hide load more button' 'Hide mix playlists' 'Hide snack bar' 'Hide suggestions shelf' 'Hide toolbar button' 'Ambient mode switch' 'Enable language switch' 'Enable new splash animation' 'Enable open links directly' 'Force OPUS codec' 'Force video codec' 'Layout switch' 'Spoof device dimensions' 'Change homepage' 'Hide navigation buttons' 'Overlay buttons' 'Custom player overlay opacity' 'Custom speed overlay' 'Disable haptic feedback' 'Hide autoplay button' 'Hide captions button' 'Hide cast button' 'Hide channel watermark' 'Hide collapse button' 'Hide filmstrip overlay' 'Hide info cards' 'Hide music button' 'Hide player button background' 'Hide previous next button' 'Hide seek message' 'Hide suggested actions' 'Hide suggested video overlay' 'Append time stamps information' 'Custom seekbar color' 'Enable new thumbnail preview' 'Enable seekbar tapping' 'Hide seekbar' 'Hide time stamp' 'Disable shorts on startup' 'Hide shorts components' 'Swipe controls' 'Custom playback speed' 'Default playback speed' 'Default video quality' 'Disable hdr video' 'Return YouTube Dislike' 'SponsorBlock' 'Theme' 'Settings' 'Enable minimized playback' 'Add splash animation' 'Custom double tap length'" # whitespace seperated list of patches to include, all default patches are included by default. default: "" (empty)
+excluded-patches = "'MicroG support' 'Custom package name' 'Alternative thumbnails' 'Enable compact controls overlay' 'Hide end screen overlay' 'Disable landscape mods' 'Hide account menu' 'Hide channel avatar section' 'Header switch' 'Hide trending searches' 'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red' 'Custom branding YouTube name' 'Hide double tap overlay filter' 'Force hide player button background' 'MaterialYou' 'Disable pip notification' 'Hide tooltip content' 'Enable debug logging' 'Enable external browser' 'Disable QUIC protocol' 'Spoof app version' 'Translations' 'Hide navigation label' 'Enable tablet navigation bar' 'Hide end screen cards' 'Spoof player parameters' 'MicroG support'" # whitespace seperated list of patches to exclude. default: "" (empty)
 exclusive-patches = true
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
 apkmirror-dpi = "nodpi" # used to select apk variant from apkmirror. default: nodpi
@@ -67,4 +67,3 @@ apkmirror-arch = "arm64-v8a" # 'arm64-v8a', 'arm-v7a', 'all', 'both'. 'both' dow
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
 rv-brand = "ReVanced Extended"
-
