@@ -36,13 +36,13 @@ apkmirror-arch = "arm64-v8a" # 'arm64-v8a', 'arm-v7a', 'all', 'both'. 'both' dow
 
 [Music-Extended]
 app-name = "Music" # if set, release name becomes SomeApp instead of Some-App. default is same as table name, which is 'Some-App' here.
-enabled = false # whether to build the app. default: true
+enabled = true # whether to build the app. default: true
 version = "auto" # 'auto', 'latest', 'beta' or a custom one e.g. '17.40.41'. default: auto
 # 'auto' option gets the latest possible version supported by all the included patches
 # 'latest' gets the latest stable without checking patches support. 'beta' gets the latest beta/alpha
 build-mode = "both" # 'both', 'apk' or 'module'. default: apk
-included-patches = "'Vanced MicroG support' 'MicroG support' 'Amoled' 'Background play' 'Bitrate default value' 'Custom playback speed' 'Enable black navigation bar' 'Enable color match player' 'Enable force minimized player' 'Enable landscape mode' 'Enable minimized playback' 'Enable new player background' 'Enable playback speed' 'Enable sleep timer' 'Exclusive audio playback' 'Hide channel guidelines' 'Hide get premium' 'Hide music ads' 'Hide taste builder' 'Hide terms container' 'Hide tooltip content' 'Hook download button' 'Remember repeat state' 'Remember shuffle state' 'Remember video quality' 'Return YouTube Dislike' 'Settings' 'Translations'" # whitespace seperated list of patches to include, all default patches are included by default. default: "" (empty)
-excluded-patches = "'Bypass certificate checks' 'Custom branding Music name' 'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red' 'Custom package name'" # whitespace seperated list of patches to exclude. default: "" (empty)
+included-patches = "'Amoled' 'Background play' 'Bitrate default value' 'Certificate spoof' 'Custom playback speed' 'Enable black navigation bar' 'Enable color match player' 'Enable custom filter' 'Enable force minimized player' 'Enable landscape mode' 'Enable minimized playback' 'Enable new player background' 'Enable old player layout' 'Enable old style library shelf' 'Enable old style miniplayer' 'Enable opus codec' 'Enable playback speed' 'Enable sleep timer' 'Enable zen mode' 'Exclusive audio playback' 'Hide account menu' 'Hide action bar label' 'Hide button shelf' 'Hide carrousel shelf' 'Hide cast button' 'Hide category bar' 'Hide channel guidelines' 'Hide emoji picker' 'Hide flyout panel' 'Hide get premium' 'Hide handle' 'Hide music ads' 'Hide navigation bar component' 'Hide new playlist button' 'Hide playlist card' 'Hide radio button' 'Hide taste builder' 'Hide terms container' 'Hide tooltip content' 'Hook donwload button' 'Remember playback speed' 'Remember repeat state' 'Remember shuffle state' 'Remember video quality' 'Replace cast button' 'Replace dismiss queue' 'Return YouTube Dislike' 'Settings' 'SponsorBlock' 'Start page' 'Translations'" # whitespace seperated list of patches to include, all default patches are included by default. default: "" (empty)
+excluded-patches = "'Custom branding Music name' 'Custom branding icon MMT' 'Custom branding icon  Revancify blue' 'Custom branding Revancify red' 'Custom package name' 'Disable auto captions' 'Enable compact dialog' 'Enable debug logging' 'MicroG support' ' '" # whitespace seperated list of patches to exclude. default: "" (empty)
 exclusive-patches = true
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
 apkmirror-dpi = "nodpi" # used to select apk variant from apkmirror. default: nodpi
@@ -53,7 +53,7 @@ rv-brand = "ReVanced Extended"
 
 [YouTube-Extended]
 app-name = "YouTube" # if set, release name becomes SomeApp instead of Some-App. default is same as table name, which is 'Some-App' here.
-enabled = true # whether to build the app. default: true
+enabled = false # whether to build the app. default: true
 version = "auto" # 'auto', 'latest', 'beta' or a custom one e.g. '17.40.41'. default: auto
 # 'auto' option gets the latest possible version supported by all the included patches
 # 'latest' gets the latest stable without checking patches support. 'beta' gets the latest beta/alpha
