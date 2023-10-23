@@ -8,7 +8,7 @@ parallel-jobs = 4 # amount of cores to use for parallel patching, if not set npr
 # you can use rvmm-config-gen to generate a config
 
 [YouTube]
-enabled = true # whether to build the app. default: true
+enabled = false # whether to build the app. default: true
 version = "auto" # 'auto', 'latest', 'beta' or a custom one e.g. '17.40.41'. default: auto
 # 'auto' option gets the latest possible version supported by all the included patches
 # 'latest' gets the latest stable without checking patches support. 'beta' gets the latest beta/alpha
@@ -22,7 +22,7 @@ apkmirror-arch = "all" # 'arm64-v8a', 'arm-v7a', 'all', 'both'. 'both' downloads
 
 
 [Music]
-enabled = true # whether to build the app. default: true
+enabled = false # whether to build the app. default: true
 version = "auto" # 'auto', 'latest', 'beta' or a custom one e.g. '17.40.41'. default: auto
 # 'auto' option gets the latest possible version supported by all the included patches
 # 'latest' gets the latest stable without checking patches support. 'beta' gets the latest beta/alpha
