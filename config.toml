@@ -8,31 +8,31 @@ parallel-jobs = 4 # amount of cores to use for parallel patching, if not set npr
 # you can use rvmm-config-gen to generate a config
 
 [YouTube]
-enabled = false # whether to build the app. default: true
+enabled = true # whether to build the app. default: true
 version = "auto" # 'auto', 'latest', 'beta' or a custom one e.g. '17.40.41'. default: auto
 # 'auto' option gets the latest possible version supported by all the included patches
 # 'latest' gets the latest stable without checking patches support. 'beta' gets the latest beta/alpha
 build-mode = "both" # 'both', 'apk' or 'module'. default: apk
-included-patches = "'Spoof device dimensions' 'Minimized playback' 'Remember video quality' 'HDR auto brightness' 'Playback speed' 'Video ads' 'Hide ads' 'Copy video url' 'Swipe controls' 'Disable fine scrubbing gesture' 'External downloads' 'Hide Shorts components' 'Hide filter bar' 'Hide email address' 'Tablet mini player' 'Disable Shorts on startup' 'SponsorBlock' 'Theme' 'Disable player popup panels'" # whitespace seperated list of patches to include, all default patches are included by default. default: "" (empty)
-excluded-patches = "'Some Patch' 'Some Other Patch'" # whitespace seperated list of patches to exclude. default: "" (empty)
+included-patches = "'Announcements' 'Bypass URL redirects' 'Client spoof' 'Minimized playback' 'Remember video quality' 'Old video quality menu' 'HDR auto brightness' 'Playback speed' 'Video ads' 'Hide ads' 'Copy video url' 'Swipe controls' 'Seekbar tapping' 'External downloads' 'Enable tablet layout' 'Premium heading' 'Hide crowdfunding box' 'Hide breaking news shelf' 'Comments' 'Hide Shorts components' 'Hide layout components' 'Player flyout menu' 'Hide Load more button' 'Hide 'Load more' button' 'Hide floating microphone button' 'Hide album cards' 'Hide filter bar' 'Hide email address' 'Alternative thumbnails' 'Tablet mini player' 'Disable Shorts on startup' 'SponsorBlock' 'Custom player overlay opacity' 'Remove player controls background' 'Theme' 'Hide cast button' 'Hide video action buttons' 'Hide autoplay button' 'Disable player popup panels' 'Return YouTube Dislike'" # whitespace seperated list of patches to include, all default patches are included by default. default: "" (empty)
+excluded-patches = "'Enable debugging' 'Open links externally' 'Disable zoom haptics' 'Spoof device dimensions' 'Always autorepeat' 'Vanced MicroG support' 'Disable fine scrubbing gesture' 'Custom branding' 'Hide info cards' 'Hide timestamp' 'Hide seekbar' 'Hide endscreen cards' 'Wide searchbar' 'Spoof app version' 'Disable auto captions' 'Navigation buttons' 'Hide player buttons' 'Hide captions button'" # whitespace seperated list of patches to exclude. default: "" (empty)
 exclusive-patches = true
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
 apkmirror-dpi = "nodpi" # used to select apk variant from apkmirror. default: nodpi
-apkmirror-arch = "arm64-v8a" # 'arm64-v8a', 'arm-v7a', 'all', 'both'. 'both' downloads both arm64-v8a and arm-v7a. default: all
+apkmirror-arch = "all" # 'arm64-v8a', 'arm-v7a', 'all', 'both'. 'both' downloads both arm64-v8a and arm-v7a. default: all
 
 
 [Music]
-enabled = false # whether to build the app. default: true
+enabled = true # whether to build the app. default: true
 version = "auto" # 'auto', 'latest', 'beta' or a custom one e.g. '17.40.41'. default: auto
 # 'auto' option gets the latest possible version supported by all the included patches
 # 'latest' gets the latest stable without checking patches support. 'beta' gets the latest beta/alpha
 build-mode = "both" # 'both', 'apk' or 'module'. default: apk
-included-patches = "'Permanent repeat' 'Permanent shuffle'" # whitespace seperated list of patches to include, all default patches are included by default. default: "" (empty)
-excluded-patches = "'Vanced MicroG support' 'Bypass certificate checks'" # whitespace seperated list of patches to exclude. default: "" (empty)
+included-patches = "'Bypass certificate checks' 'Background play' 'Music video ads' 'Exclusive audio playback' 'Codecs unlock' 'Permanent repeat' 'Permanent shuffle' 'Hide get premium' 'Minimized playback music' 'Remove upgrade button'" # whitespace seperated list of patches to include, all default patches are included by default. default: "" (empty)
+excluded-patches = "'Vanced MicroG support' 'Compact header'" # whitespace seperated list of patches to exclude. default: "" (empty)
 exclusive-patches = true
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
 apkmirror-dpi = "nodpi" # used to select apk variant from apkmirror. default: nodpi
-apkmirror-arch = "arm64-v8a" # 'arm64-v8a', 'arm-v7a', 'all', 'both'. 'both' downloads both arm64-v8a and arm-v7a. default: all
+apkmirror-arch = "all" # 'arm64-v8a', 'arm-v7a', 'all', 'both'. 'both' downloads both arm64-v8a and arm-v7a. default: all
 
 [Music-Extended]
 app-name = "Music" # if set, release name becomes SomeApp instead of Some-App. default is same as table name, which is 'Some-App' here.
