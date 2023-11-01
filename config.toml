@@ -49,6 +49,7 @@ apkmirror-dpi = "nodpi" # used to select apk variant from apkmirror. default: no
 apkmirror-arch = "arm64-v8a" # 'arm64-v8a', 'arm-v7a', 'all', 'both'. 'both' downloads both arm64-v8a and arm-v7a. default: all
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
+cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
 
 [YouTube-Extended]
@@ -66,4 +67,5 @@ apkmirror-dpi = "nodpi" # used to select apk variant from apkmirror. default: no
 apkmirror-arch = "arm64-v8a" # 'arm64-v8a', 'arm-v7a', 'all', 'both'. 'both' downloads both arm64-v8a and arm-v7a. default: all
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
+cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
