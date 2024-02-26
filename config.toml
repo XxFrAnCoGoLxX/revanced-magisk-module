@@ -11,7 +11,7 @@ parallel-jobs = 4 # amount of cores to use for parallel patching, if not set npr
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
 patches-source = "YT-Advanced/ReX-patches"
 integrations-source = "YT-Advanced/revanced-integrations"
-rv-brand = "YT-Advanced ReVanced"
+rv-brand = "ReVanced Advanced"
 included-patches = "'MaterialYou'"
 excluded-patches = "'Change start page' 'Custom branding heading' 'Custom branding icon YouTube' 'Custom branding name YouTube' 'Custom double tap length' 'Custom player overlay opacity' 'Disable auto captions' 'Disable haptic feedback' 'Enable old quality layout' 'Enable song search' 'Enable wide search bar' 'Hide captions button' 'Hide cast button' 'Hide comment component' 'Hide description components' 'Hide end screen cards' 'Hide mix playlists' 'Hide music button' 'Hide seekbar' 'SponsorBlock' 'Spoof app version' 'Translations'"
 
@@ -19,7 +19,7 @@ excluded-patches = "'Change start page' 'Custom branding heading' 'Custom brandi
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
 patches-source = "yt-advanced/ReX-patches"
 integrations-source = "yt-advanced/revanced-integrations"
-rv-brand = "yt-advanced ReVanced"
+rv-brand = "ReVanced Advanced"
 arch = "both"
 build-mode = "both"
 included-patches = "'Disable overlay filter' 'Hide voice search button'"
